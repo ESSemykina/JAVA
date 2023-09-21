@@ -61,17 +61,15 @@ public class Lab1 {
         int x0 = 0;
         int y0 = 0;
         int final_count = 0;
-
+        int count = 0;//считаем шаги
+        int flag = 0;//while(true)
+        
         System.out.println("Введите координаты");
         Scanner in = new Scanner(System.in);
         int x = in.nextInt();
         int y = in.nextInt();
 
         String slovo = " "; //направление или стоп
-
-        int count = 0;//считаем шаги
-
-        int flag = 0;//while(true)
 
         while (true) {
             System.out.println("Введите направление или стоп:");
@@ -116,8 +114,9 @@ public class Lab1 {
         System.out.print("Введите количество дорог: ");
         Scanner in = new Scanner(System.in);
         int N = in.nextInt(); //количество дорог
-
+        int doroga = 0;//номер дороги
         int min = 100000;//для сравнения
+        int max = 0;//для сравнения
 
         int[] arr = new int[N];
 
@@ -136,9 +135,7 @@ public class Lab1 {
             min = 100000;
 
         }
-        int doroga = 0;//номер дороги
-        int max = 0;//для сравнения
-
+        
         for (int i = 0; i < N; i++) {
             if (arr[i] > max) {
                 max = arr[i];
@@ -182,16 +179,3 @@ public class Lab1 {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
