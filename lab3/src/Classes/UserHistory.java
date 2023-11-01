@@ -52,7 +52,7 @@ public class UserHistory {
 
                     System.out.println("Приобрести еще билеты?(Да или Нет)");
                     String choice = in.next();
-                    buyMore = choice.equalsIgnoreCase("да");
+                    buyMore = choice.equalsIgnoreCase("Да");
                 } else {
                     System.out.println("Место занято. Выберите другое.");
                 }
