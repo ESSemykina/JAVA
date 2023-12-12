@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane cache="true" prefHeight="433.0" prefWidth="920.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/20" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mydiary1.DiaryPlansController">
+   <children>
+      <ImageView fx:id="picture" fitHeight="433.0" fitWidth="921.0" pickOnBounds="true">
+         <image>
+            <Image url="@8.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="-2.0" layoutY="84.0" prefHeight="349.0" prefWidth="923.0" style="-fx-background-color: #11ffee00;">
+         <children>
+            <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Понедельник">
+               <font>
+                  <Font name="Sylfaen" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="163.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Вторник">
+               <font>
+                  <Font name="Sylfaen" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="302.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Среда">
+               <font>
+                  <Font name="Sylfaen" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="424.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Четверг">
+               <font>
+                  <Font name="Sylfaen" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="679.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Суббота">
+               <font>
+                  <Font name="Sylfaen" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="795.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Воскресенье">
+               <font>
+                  <Font name="Sylfaen" size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="save" layoutX="440.0" layoutY="322.0" mnemonicParsing="false" text="Сохранить">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></Button>
+            <Button fx:id="add" layoutX="531.0" layoutY="322.0" mnemonicParsing="false" text="+ Новая неделя" />
+            <Text layoutX="555.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пятница">
+               <font>
+                  <Font name="Sylfaen" size="18.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="mon_field" layoutX="14.0" layoutY="36.0" prefHeight="277.0" prefWidth="118.0" promptText="Добавьте" style="-fx-boad-color: #11ffee00;" />
+            <TextArea fx:id="tue_field" layoutX="138.0" layoutY="36.0" prefHeight="277.0" prefWidth="118.0" promptText="Добавьте" style="-fx-border-color: #11ffee00;" />
+            <TextArea fx:id="wed_field" layoutX="266.0" layoutY="36.0" prefHeight="277.0" prefWidth="118.0" promptText="Добавьте" style="-fx-border-color: #11ffee00;" />
+            <TextArea fx:id="thu_field" layoutX="396.0" layoutY="36.0" prefHeight="277.0" prefWidth="118.0" promptText="Добавьте" style="-fx-boad-color: #11ffee00;" />
+            <TextArea fx:id="fri_field" layoutX="531.0" layoutY="36.0" prefHeight="277.0" prefWidth="118.0" promptText="Добавьте" style="-fx-boad-color: #11ffee00;" />
+            <TextArea fx:id="sat_field" layoutX="660.0" layoutY="36.0" prefHeight="277.0" prefWidth="118.0" promptText="Добавьте" style="-fx-boad-color: #11ffee00;" />
+            <TextArea fx:id="sun_field" layoutX="795.0" layoutY="36.0" prefHeight="277.0" prefWidth="118.0" promptText="Добавьте" style="-fx-boad-color: #11ffee00;" />
+            <Button fx:id="open" layoutX="365.0" layoutY="322.0" mnemonicParsing="false" text="Открыть">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+            <Button fx:id="back" layoutX="301.0" layoutY="322.0" mnemonicParsing="false" text="Назад" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="348.0" layoutY="14.0" text="My Diary">
+         <font>
+            <Font name="Sylfaen" size="56.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userName" editable="false" layoutX="623.0" layoutY="21.0" prefHeight="34.0" prefWidth="118.0" style="-fx-background-color: #11ffee00;">
+         <font>
+            <Font name="Sylfaen" size="17.0" />
+         </font>
+      </TextField>
+      <Text layoutX="623.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пользователь:" wrappingWidth="98.3232421875">
+         <font>
+            <Font name="Sylfaen" size="14.0" />
+         </font>
+      </Text>
+   </children>
+   <cursor>
+      <Cursor fx:constant="E_RESIZE" />
+   </cursor>
+</AnchorPane>

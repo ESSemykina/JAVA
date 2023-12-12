@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="945.0" xmlns="http://javafx.com/javafx/20" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mydiary1.DiaryController">
+   <children>
+      <ImageView fitHeight="433.0" fitWidth="945.0" pickOnBounds="true">
+         <image>
+            <Image url="@8.jpg" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="sad" layoutX="262.0" layoutY="71.0" mnemonicParsing="false" text="Грусть">
+         <font>
+            <Font name="Sylfaen" size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="happy" layoutX="359.0" layoutY="71.0" mnemonicParsing="false" text="Счастье">
+         <font>
+            <Font name="Sylfaen" size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="calm" layoutX="547.0" layoutY="114.0" mnemonicParsing="false" text="Спокойствие">
+         <font>
+            <Font name="Sylfaen" size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="stress" layoutX="457.0" layoutY="71.0" mnemonicParsing="false" text="Стресс">
+         <font>
+            <Font name="Sylfaen" size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="angry" layoutX="262.0" layoutY="114.0" mnemonicParsing="false" text="Злость">
+         <font>
+            <Font name="Sylfaen" size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="irrit" layoutX="360.0" layoutY="114.0" mnemonicParsing="false" text="Раздраженность">
+         <font>
+            <Font name="Sylfaen" size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="uncer" layoutX="547.0" layoutY="71.0" mnemonicParsing="false" text="Неуверенность">
+         <font>
+            <Font name="Sylfaen" size="16.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="231.0" layoutY="217.0" text="Как прошел день?">
+         <font>
+            <Font name="Sylfaen" size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="save" layoutX="390.0" layoutY="406.0" mnemonicParsing="false" text="Сохранить" />
+      <Button fx:id="back" layoutX="322.0" layoutY="406.0" mnemonicParsing="false" text="Назад" />
+      <Button fx:id="open" layoutX="484.0" layoutY="406.0" mnemonicParsing="false" text="Открыть" />
+      <TextArea fx:id="text" layoutX="227.0" layoutY="267.0" prefHeight="131.0" prefWidth="488.0" promptText="Опишите, как себя чувствуете..." style="-fx-border-color: white;">
+         <font>
+            <Font name="Georgia Italic" size="15.0" />
+         </font></TextArea>
+      <Label layoutX="227.0" layoutY="8.0" text="Какое у вас сегодня настроение?">
+         <font>
+            <Font name="Sylfaen" size="26.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="love" layoutX="262.0" layoutY="155.0" mnemonicParsing="false" text="Влюбленность">
+         <font>
+            <Font name="Sylfaen" size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="energy" layoutX="406.0" layoutY="155.0" mnemonicParsing="false" text="Энергичность">
+         <font>
+            <Font name="Sylfaen" size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="tired" layoutX="548.0" layoutY="155.0" mnemonicParsing="false" text="Усталость">
+         <font>
+            <Font name="Sylfaen" size="16.0" />
+         </font>
+      </CheckBox>
+   </children>
+</AnchorPane>

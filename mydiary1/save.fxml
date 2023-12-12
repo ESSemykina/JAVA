@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="176.0" xmlns="http://javafx.com/javafx/20" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mydiary1.SaveController">
+   <children>
+      <Text layoutX="1.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Успешно сохранено!">
+         <font>
+            <Font name="Sylfaen" size="19.0" />
+         </font>
+      </Text>
+      <Button fx:id="button_ok" layoutX="57.0" layoutY="38.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="61.0" text="ОК">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
